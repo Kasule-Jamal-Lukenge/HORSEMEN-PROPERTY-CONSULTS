@@ -1,0 +1,33 @@
+.sidebar{
+    width: 18%;
+    border: solid 4px red;
+    height: 100vh;
+}
+.sidebar-header{ 
+    h4{
+        text-align: center;
+    }
+}
+.sidebar-menu{
+    // background-color: rgb(14, 66, 124);
+    background-color: rgb(101, 101, 242);;
+    height: 100vh-11vh;
+}
+.sidebar-item{
+    list-style: none;
+    ul{
+        padding-top: 15px;
+        margin-left: 0px;
+        a{
+            text-decoration: none;
+            color: #FFF;
+            font-size: 15px;
+        }
+        a:hover{
+            text-decoration: none;
+            color: red;
+            background-color: #FFF;
+            padding: 15px 0px 25px 0px;
+        }
+    }
+}
