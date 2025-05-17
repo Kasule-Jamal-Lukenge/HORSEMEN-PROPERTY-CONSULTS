@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class PropertiesService {
 
-  private apiUrl = 'http://localhost:8080/api/properties'; 
+  // private apiUrl = 'http://localhost:8080/api/properties'; 
+  private apiUrl = '/api/v1/rms/properties';
+
   
   constructor(private http :HttpClient) { }
 

@@ -5,6 +5,8 @@ import { NavbarComponentComponent } from '../../ui/navbar-component/navbar-compo
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-owners-component',
@@ -14,6 +16,8 @@ import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
     MatPaginatorModule,
     MatTableModule,
     NavbarComponentComponent,
+    MatDialogModule,
+    MatButton
   ],
   templateUrl: './owners-component.component.html',
   styleUrl: './owners-component.component.scss'
@@ -42,4 +46,5 @@ export class OwnersComponentComponent implements OnInit {
       }
     )
   }
+  
 }

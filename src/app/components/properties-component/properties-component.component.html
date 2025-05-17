@@ -1,108 +1,14 @@
 <div>   
     <app-navbar-component></app-navbar-component> 
     <div class="body">
-      <div class="card-container">
-        <mat-card class="card">
+      <div class="card-container" *ngFor="let row of getRows(properties)">
+        <mat-card class="card" *ngFor="let property of row">
           <img mat-card-image class="mat-image" src="/assets/images/flat1.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Skyline Haven</mat-card-title>
+          <mat-card-title style="margin-left: 15px;">{{property.title}}</mat-card-title>
           <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
+            <p>{{property.description}}</p>
           </mat-card-content>
         </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat2.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Willow Heights</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat3.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Urban Retreat</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat4.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Luke Horizon</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-  
-      <div class="card-container">
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat5.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">The Velvet Grove</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat6.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Elysian Lofts</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat7.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Cascade Residences</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat8.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Aurora Flats</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-  
-      <div class="card-container">
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat9.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Summit View Apartments</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat10.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Harbor Pointe</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat11.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">Sapphire Suites</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-    
-        <mat-card class="card">
-          <img mat-card-image class="mat-image" src="/assets/images/flat12.jpg" alt="Image1"/>
-          <mat-card-title style="margin-left: 15px;">The Maple Courtyard</mat-card-title>
-          <mat-card-content>
-            <p>This is a simple example of an Angular Material card.</p>
-          </mat-card-content>
-        </mat-card>
-      </div>
-      
+      </div> 
     </div>
-  
   </div>

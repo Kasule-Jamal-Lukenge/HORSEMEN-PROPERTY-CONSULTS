@@ -4,6 +4,7 @@ import { OwnersComponentComponent } from './components/owners-component/owners-c
 import { SidebarComponent } from './ui/sidebar/sidebar.component';
 import { HomeComponent } from './ui/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 export const routes: Routes = [
     {path: 'properties', component: PropertiesComponentComponent},
@@ -11,5 +12,6 @@ export const routes: Routes = [
     {path: 'sidebar', component: SidebarComponent},
     {path: 'home', component: HomeComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'signup', component: SignupComponent},
     { path: '', redirectTo: 'home', pathMatch: 'full'},
 ];

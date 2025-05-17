@@ -1,6 +1,13 @@
 <app-navbar-component></app-navbar-component>
 <div class="owners-table">
-    <h2>All Owners Are Enlisted Here</h2>
+    <div class="heading">
+      <div class="header">
+        <h2>All Owners Are Enlisted Here</h2>
+      </div>
+      <div class="add-button">
+        <button mat-raised-button class="mat-button">Add Owner</button>
+      </div>
+    </div>
     <div class="table-container">
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="id">

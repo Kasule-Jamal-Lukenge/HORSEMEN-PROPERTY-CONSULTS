@@ -5,6 +5,28 @@
     font-size: 18px;
     text-align: left;
 }
+.heading{
+    display: flex;
+}
+.header{
+    width: 100%;
+}
+.add-button{
+    width: 100%;
+    float:right;
+}
 mat-icon{
     margin-left: 15px;
+}
+button{
+    margin-top: 20px;
+}
+.mat-button{
+    color: #FFF;
+    float: inline-end;
+}
+
+::ng-deep .my-button.mat-raised-button {
+  background-color: #ff9800;
+  color: #fff;
 }
